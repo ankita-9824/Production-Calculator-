@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Panel Production Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Glass Panel Production Calculator</h1>
+        <form id="calculator-form">
+            <div class="form-group">
+                <label for="product-name">Product Name:</label>
+                <select id="product-name" name11.4">ClimaGuard Grey</option>
+                    <option value="3.5">Double Silver 30T</option>
+                    <option value="4.0">Double Silver 40T</option>
+                    <option value="4.0">Double Silver 50T</option>
+                    <option value="3.2">Double Silver Aquamarine 35T</option>
+                    <option value="3.3">Double Silver Green 40T</option>
+                    <option value="3.8">Double Silver Neutral 30T</option>
+                    <option value="4.0">Double Silver Neutral 40T</option>
+                    <option value="4.5">Double Silver Neutral 50T</option>
+                    <option value="7.5">HD Blue</option>
+                    <option value="6.0">HD Bronze</option>
+                    <option value="5.4">HD Green</option>
+                    <option value="4.5">HD Grey</option>
+                    <option value="10.0">Gold 31</option>
+                    <option value="7.0">Neutral 40</option>
+                    <option value="9.8">Neutral 60</option>
+                    <option value="7.6">Neutral 70</option>
+                    <option value="7.0">Neutral Plus 50</option>
+                    <option value="7.0">Royal Blue 40</option>
+                    <option value="8.0">Silver 35</option>
+                    <option value="10.0">Silver 40</option>
+                    <option value="11.4">ShowerGuard®</option>
+                    <option value="5.5">Solar Aquamarine 35</option>
+                    <option value="4.5">Solar Blue 30</option>
+                    <option value="3.5">Solar Green 30</option>
+                    <option value="11.4">Solar Grey 33</option>
+                    <option value="11.4">Solar Light Blue 52</option>
+                    <option value="7.0">Solar Neutral 34</option>
+                    <option value="11.4">Solar Neutral 67</option>
+                    <option value="11.4">Solar Silver 20</option>
+                    <option value="11.4">Solar Silver Grey 32</option>
+                    <option value="4.3">Solar Plus Tru Blue 40</option>
+                    <option value="4.5">Solar Plus Blue 27</option>
+                    <option value="4.5">Solar Plus Green 27</option>
+                    <option value="4.5">Solar Plus Grey 27</option>
+                    <option value="3.5">Solar Plus Neutral 27</option>
+                    <option value="6.7">Solar Plus Clear 65</option>
+                    <option value="7.3">Solar Plus Green 50</option>
+                    <option value="9.0">Solar Plus Light Blue 50</option>
+                    <option value="6.3">Solar Plus Neutral 45</option>
+                    <option value="6.3">Solar Plus Sea Green 35</option>
+                    <option value="5.1">Solar Plus Silver Grey 35</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="panel-length">Glass Panel Length (mm):</label>
+                <input type="number" id="panel-length" name="panel-length" required>
+            </div>
+            <div class="form-group">
+                <label for="glass-width">Glass Width (mm):</label>
+                <input type="number" id="glass-width" name="glass-width" required>
+            </div>
+            <div class="form-group">
+                <label for="glass-thickness">Glass Thickness (mm):</label>
+                <input type="number" id="glass-thickness" name="glass-thickness" required>
+            </div>
+            <div class="form-group">
+                <label for="lites-per-box">Lites per Box:</label>
+                <input type="number" id="lites-per-box" name="lites-per-box" required>
+            </div>
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+        <div id="results" class="results-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
